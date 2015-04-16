@@ -1,0 +1,8 @@
+<h1>Flashcards..hooray!</h1>
+<h2>Subjects</h2>
+<ul>
+  <li><%= link_to "Create New Subject", new_subject_path %></li>
+<% @subjects.each do |subject| %>
+  <li><%= link_to subject.title, subject_path( subject ) %></li>
+<% end %>
+</ul>
