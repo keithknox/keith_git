@@ -1,0 +1,10 @@
+<h1>...and now here's Keith with the weather!</h1>
+
+<h3>Day</h3>
+<%= @response.body[1]['day_of_week'] %>
+<h3> High </h3>
+<%= @response.body[1]['high'] %>
+<h3>Low </h3>
+<%= @response.body[1]['low'] %>
+<h3>Condition</h3>
+<%= @response.body[1]['condition'] %>
